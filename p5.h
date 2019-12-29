@@ -14,3 +14,8 @@ EM_JS(void, draw, (), { \
 EM_JS(void, name, args, { \
     constructor_body \
 });
+
+#define FUNCTION(return_type, name, args, function_body) \
+EM_JS(return_type, name, args, { \
+    function_body \
+});

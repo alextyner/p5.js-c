@@ -1,8 +1,8 @@
-CC=em++
+CC=emcc
 CFLAGS=-Wall --shell-file template.html
 
-dist-web/index.html: dist-web main.cpp template.html
-	$(CC) $(CFLAGS) *.cpp -o dist-web/index.html
+dist-web/index.html: dist-web main.c template.html
+	$(CC) $(CFLAGS) *.c -o dist-web/index.html
 
 dist-web:
 	mkdir dist-web

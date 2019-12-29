@@ -1,12 +1,3 @@
-# p5.js-c
-
- Use the p5.js JavaScript library -- from C!
-
-### Why?
-
-Just in case you ever wanted to write this
-
-```C
 #include "p5.h"
 
 p5_SETUP(
@@ -28,15 +19,3 @@ int main() {
     draw_surprised_face(200, 200);
     return 0;
 }
-```
-
-and then compile it
-
-```bash
-$ make
-emcc -Wall --shell-file template.html *.c -o dist-web/index.html
-```
-
-to produce this:
-
-![surprised face canvas](docs/img/surprised_face_canvas.png?raw=true "JS Canvas with Surprised Face Drawing")
