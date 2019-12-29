@@ -24,7 +24,7 @@ FUNCTION(void, draw_surprised_face, (int x, int y),
     ellipse(x, y + 10, 30, 10); // Mouth.
 );
 
-int main() {
+int main(int argc, char **argv) {
     draw_surprised_face(200, 200);
     return 0;
 }
