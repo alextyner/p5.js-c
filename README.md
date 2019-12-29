@@ -9,8 +9,11 @@ Just in case you ever wanted to write this
 ```C
 #include "p5.h"
 
+#define WIDTH 400
+#define HEIGHT 400
+
 p5_SETUP(
-    createCanvas(400, 400);
+    createCanvas(WIDTH, HEIGHT);
     background(0);
 );
 
@@ -25,7 +28,7 @@ FUNCTION(void, draw_surprised_face, (int x, int y),
 );
 
 int main(int argc, char **argv) {
-    draw_surprised_face(200, 200);
+    draw_surprised_face(WIDTH / 2, HEIGHT / 2);
     return 0;
 }
 ```
