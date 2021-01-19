@@ -1,6 +1,6 @@
 # p5.js-c
 
- Use the p5.js JavaScript library -- from C!
+ Use the [p5.js JavaScript library](https://p5js.org/reference/) -- from C!
 
 ### Why?
 
